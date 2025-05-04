@@ -1,14 +1,13 @@
 version: 1
 frontend:
   phases:
+    # IMPORTANT - Please verify your build commands
     build:
-      commands:
-        - npm ci
-        - npm run build
+      commands: []
   artifacts:
-    baseDirectory: build
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: /
     files:
       - '**/*'
   cache:
-    paths:
-      - node_modules/**/*
+    paths: []
